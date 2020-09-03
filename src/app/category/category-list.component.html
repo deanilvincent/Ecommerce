@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let category of categories">
+      <tr >
+        <td>{{category.id}}</td>
+        <td>{{category.categoryName}}</td>
+        <td>
+          <button type="button" class="btn btn-outline-primary"
+          [routerLink]="['/categories', category.id, 'edit']">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
