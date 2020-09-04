@@ -1,0 +1,17 @@
+<form novalidate [formGroup]="categoryForm">
+  <div class="form-group">
+      <label for="categoryNameId">Name</label>
+      <input type="text" 
+              class="form-control" 
+              id="categoryNameId"
+              formControlName="categoryName" />
+      <!-- <span class="invalid-feedback"
+              *ngIf="categoryForm.get('categoryName')?.">Category Name is required.</span> -->
+  </div>
+  <button type="button" class="btn btn-outline-secondary"
+          (click)="getBack()">Back</button>
+  <button type="button" class="btn btn-outline-primary"
+          (click)="save()">Save</button>
+  <button type="button" class="btn btn-outline-danger"
+          (click)="delete()">Delete</button>
+</form>

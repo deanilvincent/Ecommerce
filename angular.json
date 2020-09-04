@@ -29,7 +29,8 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"]
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -122,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Ecommerce"
+    }
+  },
+  "defaultProject": "Ecommerce",
+  "cli": {
+    "analytics": "6720a8ea-9b3d-414c-a1b1-bff1e4afa1a8"
+  }
 }
